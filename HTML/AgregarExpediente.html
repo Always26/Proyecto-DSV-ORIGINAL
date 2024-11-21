@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Expediente</title>
+    <link rel="stylesheet" href="/CSS/AgregarExpediente.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section>
+        <div class="header">
+        <h1>Agregar Expediente</h1>
+        <div class = "iconos"></div>
+        <a href="https://www.google.com"> 
+            <i class='bx bx-search' ></i>
+        </a>
+        </div>
+    </section>
+    <section class="section2">
+        <form class = "form-container">
+            <div class="form__group field flex">
+                <input type="text" id="nombre" class="form__field" placeholder="Nombre" required>
+                <label for="nombre" class="form__label">Nombre</label>
+            </div>
+            <div class="form__group field flex">
+                <input type="text" id="apellido" class="form__field" placeholder="Apellido" required>
+                <label for="apellido" class="form__label">Apellido</label>
+            </div>
+            <div class="form__group field flex">
+                <input type="text" id="cedula" class="form__field" placeholder="Cédula" required>
+                <label for="cedula" class="form__label">Cédula</label>
+            </div>
+            <div class="form__group field flex">
+                <input type="date" id="fechaNacimiento" class="form__field" required>
+                <label for="fechaNacimiento" class="form__label">Fecha de Nacimiento</label>
+            </div>
+            <div class="form__group field flex">
+                <input type="text" id="telefono" class="form__field" placeholder="Teléfono" required>
+                <label for="telefono" class="form__label">Teléfono</label>
+            </div>
+            <div class="form__group field flex">
+                <input type="email" id="correo" class="form__field" placeholder="Correo" required>
+                <label for="correo" class="form__label">Correo</label>
+            </div>
+            <div class="form__group field flex option">
+                <select id="genero" class="form__field" required>
+                    <option value="" disabled selected hidden>Selecciona género</option>
+                    <option style = "color : black;">Masculino</option>
+                    <option style = "color : black;">Femenino</option>
+                    <option style = "color : black;">Otro</option>
+                </select>
+                <label for="genero" class="form__label">Género</label>
+            </div>
+            <div class="form__group field flex">
+                <input type="text" id="telefonoEmergencia" class="form__field" placeholder="Teléfono de emergencia" required>
+                <label for="telefonoEmergencia" class="form__label">Teléfono de Emergencia</label>
+            </div>
+            <div class="form__group field flex">
+                <input type="text" id="condicionMedica" class="form__field" placeholder="Condición médica" required>
+                <label for="condicionMedica" class="form__label">Condición Médica</label>
+            </div>
+            <div class="form__group field flex">
+                <textarea id="direccion" class="form__field" rows="3" placeholder="Dirección" required></textarea>
+                <label for="direccion" class="form__label">Dirección</label>
+            </div>
+        </form>
+        <div class="section2">
+        <button  type="submit">Guardar</button>
+    </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,146 @@
+/*Encabezado*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header h1 {
+    color: #fff;
+    font-size: 35px;
+    margin: 0;
+    font-family: "Century Gothic Regular"; 
+}   
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4164E2;
+    height: 15%;
+    padding: 25px;
+}
+
+i{
+    font-size: 30px;
+    color: rgb(252, 252, 252);
+    cursor: pointer;
+}
+/*Cuerpo*/
+body{
+    background-color: #f2f2f2;
+    font-family: "Century Gothic Regular";
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.form-element{
+    margin: 10px;
+}
+.form-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; 
+    height: 100%;
+    background-color: #FFFDFD;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding : 30px;
+}
+.section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    padding: 50px;
+}
+.part2{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+
+/*diseño inputs*/
+/* From Uiverse.io by mrhyddenn */ 
+.form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 180px;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: #554a4a;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #116399, rgb(56, 202, 239));
+    border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #38caef;
+    font-weight: 700;
+}
+.form__field:required, .form__field:invalid {
+    box-shadow: none;
+}
+.option{
+
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+button{
+    background-color: #4164E2;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px;
+}
